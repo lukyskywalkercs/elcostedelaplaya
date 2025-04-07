@@ -1,0 +1,8 @@
+﻿{
+  "version": 2,
+  "buildCommand": "echo 'Skip build'",
+  "outputDirectory": ".",
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
