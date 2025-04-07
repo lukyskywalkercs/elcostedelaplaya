@@ -1,7 +1,12 @@
-# Configuraci�n de headers para MIME types
-/*.ts
-  Content-Type: application/javascript
+﻿# Configuración MIME específica
 /*.js
+  Content-Type: application/javascript
+/*.ts
   Content-Type: application/javascript
 /*.css
   Content-Type: text/css
+
+# Configuración SPA
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block

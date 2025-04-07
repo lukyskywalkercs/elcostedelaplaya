@@ -1,25 +1,25 @@
-# Configuración para Netlify
+ï»¿# ConfiguraciÃ³n bÃ¡sica
 [build]
   publish = "."
   command = ""
 
-# Configuración para tipos MIME
+# ConfiguraciÃ³n detallada de encabezados
 [[headers]]
-  for = "*.ts"
+  for = "/*.js"
     [headers.values]
-    Content-Type = "application/javascript; charset=utf-8"
+    Content-Type = "application/javascript"
 
 [[headers]]
-  for = "*.js"
+  for = "/*.ts"
     [headers.values]
-    Content-Type = "application/javascript; charset=utf-8"
+    Content-Type = "application/javascript"
 
 [[headers]]
-  for = "*.css"
+  for = "/*.css"
     [headers.values]
-    Content-Type = "text/css; charset=utf-8"
+    Content-Type = "text/css"
 
-# Configuración para SPA
+# Redirecciones para SPA
 [[redirects]]
   from = "/*"
   to = "/index.html"

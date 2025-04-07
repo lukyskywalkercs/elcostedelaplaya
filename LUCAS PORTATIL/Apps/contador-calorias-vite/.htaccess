@@ -1,0 +1,7 @@
+﻿# Forzar tipos MIME correctos
+AddType application/javascript .js
+AddType application/javascript .ts
+AddType text/css .css
+
+# Prevenir que el servidor adivine tipos MIME
+Options -MultiViews
