@@ -1,9 +1,7 @@
-# Headers para tipos MIME
+# Configuración de headers para MIME types
 /*.ts
-  Content-Type: application/javascript; charset=utf-8
-
+  Content-Type: application/javascript
 /*.js
-  Content-Type: application/javascript; charset=utf-8
-
+  Content-Type: application/javascript
 /*.css
-  Content-Type: text/css; charset=utf-8
+  Content-Type: text/css
