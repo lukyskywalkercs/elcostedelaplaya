@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto Turístico Costero - Estimación 2025</title>
+    <meta name="description" content="¿Cuál es el coste oculto del turismo masivo? Visualiza en tiempo real el consumo estimado de recursos en hoteles de la costa (CS, V, AL) y reflexiona sobre un turismo más sostenible.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>El Coste Oculto del Sol y Playa: Proyección 2025</h1>
+        <p>Una estimación del consumo de recursos en hoteles de la costa de Castellón, Valencia y Almería para el año 2025, <br>basada en los datos de pernoctaciones de 2023 (Fuente: INE).</p>
+    </header>
+
+    <main>
+        <section id="contador-impacto">
+            <h2>Impacto Estimado para 2025 (en tiempo real):</h2>
+            <div class="contador-container">
+                <div class="contador-item">
+                    <span class="etiqueta">Litros de Agua</span>
+                    <div class="valor" id="contador-agua">0</div> 
+                </div>
+                <div class="contador-item">
+                    <span class="etiqueta">Huevos Consumidos</span>
+                    <div class="valor" id="contador-huevos">0</div>
+                </div>
+                <div class="contador-item">
+                    <span class="etiqueta">Litros de Leche</span>
+                    <div class="valor" id="contador-leche">0</div>
+                </div>
+            </div>
+            <p class="nota-contador">Impacto estimado para 2025: Observa cómo crece el consumo segundo a segundo.</p>
+            
+            <div class="totales-bajo-contador">
+                <strong>Totales Anuales Estimados 2025 (hoteles CS, V, AL):</strong> 
+                Agua: <span id="total-agua-2025">...</span> L | 
+                Huevos: <span id="total-huevos-2025">...</span> ud | 
+                Leche: <span id="total-leche-2025">...</span> L
+                <br>
+                <span class="nota-estimacion-inline">(Proyección basada en datos 2023 para estas zonas. El consumo real podría variar)</span>
+            </div>
+        </section>
+
+        <section id="datos-adicionales">
+            <h2>Contexto Adicional:</h2>
+            <ul>
+                <li>La demanda hotelera estimada anual en estas zonas (CS, V, AL) requeriría la explotación continua de aproximadamente <strong id="gallinas-necesarias">...</strong> gallinas ponedoras, sometidas a condiciones de producción intensiva.</li>
+                <li>Del mismo modo, para satisfacer la demanda de leche estimada, se necesitaría la explotación de unas <strong id="vacas-necesarias">...</strong> vacas lecheras, cuya vida productiva es a menudo acortada por la alta exigencia.</li>
+                <li>El consumo estimado de agua por huésped y noche (<strong id="consumo-agua-huesped">...</strong> litros) es significativamente superior al consumo medio diario de agua por persona en un hogar español (<strong id="consumo-medio-hogar">...</strong> litros, Fuente: INE), lo que refleja el alto impacto hídrico del sector hotelero.</li>
+            </ul>
+        </section>
+
+        <section id="fuentes-metodologia">
+            <h2>Fuentes y Metodología (Estimaciones):</h2>
+            <ul>
+                <li>Pernoctaciones Hoteleras 2023 (Castellón, Valencia, Almería): Instituto Nacional de Estadística (INE), Encuesta de Ocupación Hotelera.</li>
+                <li>Consumo Agua/Huésped: ~300 L/noche. Fuente: Media basada en diversos estudios y auditorías energéticas en hoteles (ej. ISTAS, Eco-huella). Se toma valor conservador.</li>
+                <li>Producción Huevos/Gallina: ~300 huevos/año. Fuente: MAPA, promedios sectoriales.</li>
+                <li>Producción Leche/Vaca: ~8900 L/año. Fuente: MAPA, FEGA, promedios sectoriales.</li>
+                <li>Consumo Agua Hogar (España): ~133 L/persona/día. Fuente: INE (Estadística sobre Suministro y Saneamiento, 2022).</li>
+                <li><strong>Nota:</strong> Todos los cálculos de consumo se basan en el total de pernoctaciones anuales de 2023 para proyectar el 2025. Los valores son estimaciones y el consumo real puede variar.</li>
+            </ul>
+        </section>
+
+        <section id="reflexion-escala">
+            <h2>Una Mirada Más Amplia</h2>
+            <p>Esta estimación se centra únicamente en las provincias de Castellón, Valencia y Almería. Imagina la magnitud del impacto si incluyéramos otras grandes zonas turísticas costeras como las Islas Baleares (Mallorca, Ibiza...), Murcia, Málaga y el resto de la costa andaluza, Cataluña o las Islas Canarias. La presión sobre los recursos naturales y la necesidad de un modelo turístico más sostenible es un desafío a gran escala.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Un proyecto de <a href="https://oasis-multimedia.com" target="_blank">Oasis Multimedia</a> para la reflexión sobre la sostenibilidad del turismo.</p>
+        <p>Comprometidos con la concienciación sobre el cambio climático, el uso responsable de datos y un futuro más sostenible.</p>
+        <p>Contacto: <a href="mailto:lucas@oasis-multimedia.com">lucas@oasis-multimedia.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

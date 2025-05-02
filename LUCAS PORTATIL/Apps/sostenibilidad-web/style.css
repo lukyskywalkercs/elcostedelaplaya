@@ -1,0 +1,211 @@
+/* style.css */
+
+/* Reset básico y fuentes */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Color de texto principal */
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-weight: 600; /* Un poco más grueso, estilo Apple */
+    color: #111; /* Títulos más oscuros */
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #eee; /* Separador sutil */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+main {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 40px auto; /* Centrado */
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee; /* Separadores sutiles entre secciones */
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+/* Estilos del Contador */
+#contador-impacto h2 {
+    text-align: center;
+}
+
+.contador-container {
+    display: flex;
+    justify-content: space-around; /* Espacio entre contadores */
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f8f8f8; /* Fondo ligeramente gris para el contenedor */
+    padding: 30px 10px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra muy sutil */
+}
+
+.contador-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.etiqueta {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.valor {
+    font-size: 3em; /* Tamaño grande para los números */
+    font-weight: 300; /* Fuente más fina, estilo moderno */
+    padding: 10px 0;
+    min-width: 150px; /* Ancho mínimo para que no salten mucho los números */
+    
+    /* El degradado para los números */
+    background: linear-gradient(45deg, #ff8c00, #ffd700, #90ee90); /* Naranja -> Amarillo -> Verde claro */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Hacemos el color del texto transparente para que se vea el fondo */
+    
+    /* Placeholder para el efecto slot - más adelante con JS */
+    overflow: hidden; /* Necesario para ocultar otros números en el slot */
+    height: 1.2em; /* Ajustar a la altura de una línea de número */
+    line-height: 1.2em;
+}
+
+.nota-contador {
+    text-align: center;
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Sección Datos Adicionales y Fuentes */
+#datos-adicionales ul,
+#fuentes-metodologia ul {
+    list-style: none; /* Quitar puntos de lista */
+    padding-left: 0;
+}
+
+#datos-adicionales li,
+#fuentes-metodologia li {
+    margin-bottom: 10px;
+    padding-left: 20px; /* Indentación */
+    position: relative;
+}
+
+/* Añadir un pequeño icono o marcador */
+#datos-adicionales li::before,
+#fuentes-metodologia li::before {
+    content: "▹"; /* O un icono SVG/FontAwesome si prefieres */
+    position: absolute;
+    left: 0;
+    color: #ff8c00; /* Naranja para destacar */
+}
+
+.totales-bajo-contador {
+    text-align: center;
+    font-size: 0.9em; 
+    color: #555; 
+    margin-top: 15px; 
+    line-height: 1.5;
+}
+
+.totales-bajo-contador strong {
+    font-weight: 600;
+    color: #333;
+}
+
+.nota-estimacion-inline {
+    display: block; 
+    font-size: 0.85em;
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+}
+
+#fuentes-metodologia p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+#fuentes-metodologia strong {
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px 20px; /* Aumentamos padding vertical */
+    font-size: 0.9em;
+    color: #666; /* Gris medio para el texto */
+    background-color: #f9f9f9; /* Fondo gris muy claro */
+    border-top: 1px solid #eaeaea; /* Borde superior más sutil */
+    line-height: 1.7;
+}
+
+footer p {
+    margin-bottom: 8px; /* Un poco más de espacio entre párrafos */
+}
+
+footer a {
+    color: #007aff; /* Azul típico de enlaces Apple/moderno */
+    text-decoration: none;
+    font-weight: 500; /* Un poco más de peso al enlace */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el indicador de mes - Eliminado */
+/* #mes-actual {
+    width: 100%; 
+    font-size: 1.5em; 
+    font-weight: 500;
+    color: #444; 
+    margin-bottom: 25px; 
+    text-align: center; 
+} */
+
+.contador-item {
+}
+
+/* Estilos para la nueva sección de reflexión */
+#reflexion-escala {
+    margin-top: 40px; /* Espacio antes de esta sección */
+    padding-top: 20px; /* Espacio interno superior */
+    border-top: 1px solid #eee; /* Separador sutil como el header */
+}
+
+#reflexion-escala h2 {
+    text-align: center; /* Centrar el título de esta sección */
+    margin-bottom: 20px;
+}
+
+#reflexion-escala p {
+    text-align: justify; /* Justificar el párrafo para mejor lectura */
+    color: #444; /* Un gris un poco más oscuro */
+} 
