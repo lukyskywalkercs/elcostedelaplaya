@@ -276,4 +276,49 @@ footer a:hover {
         font-size: 0.85em;
         padding: 30px 15px;
     }
+}
+
+/* --- Estilos para Secciones Colapsables --- */
+
+.titulo-seccion {
+    display: flex;
+    justify-content: space-between; /* Coloca el título a la izquierda y el botón a la derecha */
+    align-items: center; /* Alinea verticalmente el título y el botón */
+    margin-bottom: 1em; /* Mantiene el espacio inferior que tenía el h2 */
+}
+
+.titulo-seccion h2 {
+    margin-bottom: 0; /* Quita el margen inferior del h2 ya que lo maneja el contenedor */
+}
+
+.toggle-btn {
+    background-color: #eee;
+    border: none;
+    color: #555;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 5px;
+    line-height: 1;
+    min-width: 30px; /* Ancho mínimo */
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #ddd;
+}
+
+.contenido-colapsable {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out; /* Transición suave al abrir/cerrar */
+    /* Inicialmente oculto */
+}
+
+.contenido-colapsable.expanded {
+    max-height: 1000px; /* Un valor suficientemente grande para mostrar todo el contenido */
+    transition: max-height 0.4s ease-in;
+    /* Se mostrará cuando tenga la clase 'expanded' */
 } 

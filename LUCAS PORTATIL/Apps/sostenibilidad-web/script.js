@@ -95,4 +95,18 @@ document.addEventListener('DOMContentLoaded', () => {
     cambiarMes(); 
     */
 
+    // --- LÓGICA PARA SECCIONES COLAPSABLES ---
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const contenido = button.closest('.titulo-seccion').nextElementSibling;
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+            button.setAttribute('aria-expanded', !isExpanded);
+            button.textContent = isExpanded ? '+' : '−'; // Cambia entre + y − (o usa iconos)
+            contenido.classList.toggle('expanded');
+        });
+    });
+
 }); 
