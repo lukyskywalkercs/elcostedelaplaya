@@ -26,6 +26,15 @@ header h1 {
     margin-bottom: 0.5em;
 }
 
+/* Estilo para el párrafo leitmotiv */
+.leitmotiv {
+    font-size: 1.1em; /* Ligeramente más grande que el párrafo normal */
+    font-weight: 500; /* Un poco más de peso */
+    color: #444; /* Un gris oscuro para destacar sin ser negro puro */
+    margin-top: 20px; /* Espacio sobre este párrafo */
+    line-height: 1.6;
+}
+
 main {
     max-width: 800px; /* Ancho máximo del contenido */
     margin: 40px auto; /* Centrado */
