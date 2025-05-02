@@ -208,4 +208,72 @@ footer a:hover {
 #reflexion-escala p {
     text-align: justify; /* Justificar el párrafo para mejor lectura */
     color: #444; /* Un gris un poco más oscuro */
+}
+
+/* --- Media Queries para Responsive Design --- */
+
+/* Tablets y pantallas medianas (ej. <= 768px) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Reducir tamaño título principal */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Reducir tamaño encabezados de sección */
+    }
+
+    .valor {
+        font-size: 2.5em; /* Reducir tamaño números del contador */
+        min-width: 120px; /* Reducir ancho mínimo */
+    }
+
+    .contador-container {
+        padding: 20px 10px; /* Menos padding interno */
+    }
+}
+
+/* Móviles (ej. <= 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em; /* Aún más pequeño */
+    }
+
+    h2 {
+        font-size: 1.3em; /* Aún más pequeño */
+    }
+
+    .contador-container {
+        flex-direction: column; /* Apilar contadores verticalmente */
+        align-items: center; /* Centrar items al apilar */
+        padding: 20px 5px;
+    }
+
+    .contador-item {
+        margin-bottom: 25px; /* Añadir espacio entre contadores apilados */
+        width: 90%; /* Asegurar que no ocupen todo el ancho */
+    }
+
+    .contador-item:last-child {
+        margin-bottom: 0; /* Quitar margen inferior al último item */
+    }
+
+    .valor {
+        font-size: 2.2em; /* Tamaño números en móvil */
+        min-width: auto; /* Quitar ancho mínimo en móvil */
+        height: auto; /* Permitir altura automática */
+        line-height: 1.2; /* Ajustar línea */
+    }
+
+    .totales-bajo-contador {
+        font-size: 0.85em; /* Reducir texto bajo contador */
+    }
+
+    #reflexion-escala p {
+        text-align: left; /* Cambiar justificado a izquierda en móvil */
+    }
+    
+    footer {
+        font-size: 0.85em;
+        padding: 30px 15px;
+    }
 } 
